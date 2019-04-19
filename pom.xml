@@ -7,7 +7,10 @@
   <groupId>com.chao</groupId>
   <artifactId>springcloud-learn</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <modules>
+        <module>ms-a1-eureka-server</module>
+    </modules>
+    <packaging>pom</packaging>
   <name>springcloud-learn</name>
   <url>http://www.example.com</url>
 
@@ -24,18 +27,14 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
+
   </dependencies>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Greenwich</version>
+        <version>Finchley.SR2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
