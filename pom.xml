@@ -6,11 +6,15 @@
   <groupId>com.chao</groupId>
   <artifactId>springcloud-learn</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>ms-a1-eureka-server</module>
-        <module>ms-a1-product-simple</module>
+  <modules>
+    <module>ms-a1-eureka-server</module>
+    <module>ms-a1-product-plain</module>
+    <module>ms-b1-eureka-server</module>
+    <module>ms-b2-eureka-server</module>
+    <module>ms-b1-product-plain</module>
     </modules>
-    <packaging>pom</packaging>
+
+  <packaging>pom</packaging>
   <name>springcloud-learn</name>
   <url>https://github.com/cj96248/springcloud-learn</url>
 
