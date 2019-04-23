@@ -4,16 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Eureka Client
- * 最简单的商品模块：不会有任何逻辑代码，只包含基本配置
- * Port : 8080
+ * 服务提供者
+ * 简易的商品模块：包含一个商品信息服务
+ * Port : 10001
  */
 @SpringBootApplication
-public class ProductSimpleApp
+public class ProductRibbonApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(ProductSimpleApp.class, args);
+        SpringApplication.run(ProductRibbonApp.class, args);
     }
 }
 
