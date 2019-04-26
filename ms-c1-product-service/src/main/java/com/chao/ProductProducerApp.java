@@ -9,11 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Port : 10001
  */
 @SpringBootApplication
-public class ProductRibbonApp
+public class ProductProducerApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(ProductRibbonApp.class, args);
+        SpringApplication.run(ProductProducerApp.class, args);
     }
 }
 

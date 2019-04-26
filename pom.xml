@@ -12,7 +12,7 @@
     <module>ms-b1-eureka-server</module>
     <module>ms-b2-eureka-server</module>
     <module>ms-b1-product-plain</module>
-    <module>ms-c1-product-ribbon</module>
+    <module>ms-c1-product-service</module>
     <module>ms-c1-order-ribbon</module>
     </modules>
 

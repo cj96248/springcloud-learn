@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ms-c1-product-ribbon</artifactId>
+    <artifactId>ms-c1-product-service</artifactId>
 
-    <name>ms-c1-product-ribbon</name>
+    <name>ms-c1-product-service</name>
 
     <dependencies>
         <dependency>
