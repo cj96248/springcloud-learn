@@ -2,7 +2,6 @@ package com.chao.controller;
 
 import com.chao.entity.Order;
 import com.chao.entity.Product;
-import com.chao.service.OrderAService;
 import com.chao.service.OrderBService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

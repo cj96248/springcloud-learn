@@ -1,7 +1,10 @@
 package com.chao.config;
 
+import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.WeightedResponseTimeRule;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
@@ -13,17 +16,15 @@ import org.springframework.web.client.RestTemplate;
 public class CustomConfig {
 
     @Bean
-    public RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
-
-    @Bean
     @LoadBalanced
     public RestTemplate ribbonRestTemplate(){
         return new RestTemplate();
     }
 
-    public IRule ribbonRule(){
-        return new RandomRule();
-    }
+//    @Bean
+//    public IRule ribbonRule(){
+//        return new WeightedResponseTimeRule();
+//    }
+
+
 }
