@@ -15,6 +15,7 @@
     <module>ms-c1-product-service</module>
     <module>ms-c1-order-ribbon</module>
     <module>ms-d1-order-ribbon</module>
+    <module>ms-e1-order-feign</module>
     </modules>
 
   <packaging>pom</packaging>
