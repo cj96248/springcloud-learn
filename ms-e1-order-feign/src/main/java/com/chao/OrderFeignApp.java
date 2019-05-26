@@ -7,15 +7,16 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * 服务消费者
  * 简易的订单模块
- * Port : 100010
+ * 使用Feign 服务间调用
+ * Port : 100020
  */
 @SpringBootApplication
 @EnableFeignClients
-public class OrderRibbonApp
+public class OrderFeignApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(OrderRibbonApp.class, args);
+        SpringApplication.run(OrderFeignApp.class, args);
     }
 }
 

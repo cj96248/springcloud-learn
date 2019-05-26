@@ -4,17 +4,14 @@ import com.chao.entity.Order;
 import com.chao.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.UUID;
 
 @Service
-public class OrderBService {
+public class OrderFeignService {
 
     @Autowired
-    private RestTemplate ribbonRestTemplate;
+    FeignService feignService;
 
     /**
      * 生成一个订单
@@ -23,8 +20,7 @@ public class OrderBService {
      */
     public Order create(Integer id, Integer amount){
         String url = "http://product-service/product/"+id;
-        Product p = ribbonRestTemplate.getForObject(url, Product.class);
-        return new Order(UUID.randomUUID().toString(), p, amount);
+        return null;
     }
 
     /**
@@ -32,8 +28,7 @@ public class OrderBService {
      */
     public List<Product> findAll(){
         String url = "http://product-service/product/list";
-        Product[] p = ribbonRestTemplate.getForObject(url, Product[].class);
-        return Arrays.asList(p);
+        return null;
     }
 
     /**
@@ -42,6 +37,6 @@ public class OrderBService {
      */
     public String hello() {
         String url = "http://PRODUCT-SERVICE/product/ping";
-        return ribbonRestTemplate.getForObject(url,String.class);
+        return feignService.sayHi();
     }
 }
