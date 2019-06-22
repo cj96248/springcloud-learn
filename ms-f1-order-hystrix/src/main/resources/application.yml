@@ -1,8 +1,8 @@
 server:
-  port: 10050
+  port: 10060
 spring:
   application:
-    name: order-feign
+    name: order-hystrix
 eureka:
   client:
     service-url:
