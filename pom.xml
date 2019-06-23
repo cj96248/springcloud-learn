@@ -17,6 +17,7 @@
     <module>ms-d1-order-ribbon</module>
     <module>ms-e1-order-feign</module>
     <module>ms-f1-order-hystrix</module>
+    <module>ms-f2-order-hystrix-dashboard</module>
     </modules>
 
   <packaging>pom</packaging>
