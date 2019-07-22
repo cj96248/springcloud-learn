@@ -18,6 +18,7 @@
     <module>ms-e1-order-feign</module>
     <module>ms-f1-order-hystrix</module>
     <module>ms-f2-order-hystrix-dashboard</module>
+    <module>ms-g1-zuul</module>
     </modules>
 
   <packaging>pom</packaging>

@@ -1,0 +1,14 @@
+server:
+  port: 10070
+spring:
+  application:
+    name: zuul-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+zuul:
+  routes:
+    product:
+      path: /product/**
+      serviceId: product-service
